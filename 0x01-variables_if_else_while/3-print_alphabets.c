@@ -8,13 +8,14 @@ int main(void)
 {
 	char ab = 'a';
 	char AB = 'A';
-	/ "prints a - z" /
+	^/ "prints a - z" /
 	while (ab <= 'z')
+		
 	{
 		putchar(ab);
 		ab++;
 	}
-	/ "prints A -Z" /
+	/ "prints A - Z" /
 	while (AB <= 'Z')
 	{
 		putchar(AB);
