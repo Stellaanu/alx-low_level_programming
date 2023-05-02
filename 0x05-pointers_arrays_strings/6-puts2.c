@@ -2,28 +2,27 @@
 /**
  * puts2 - prints every other character of a string,
  * starting with the first character
- *@str:input
-Return:print
+ *@str: string to be printed
+ *Return: Always 0
 */
 void puts2(char *str)
 {
-	int longa = 0;
-	int t = 0;
-	char *y = str;
-	int o;
+	int count = 0, i;
 
-	while (*y != '\0')
+	while (*str)
 	{
-		y++;
-		longa++;
+		count++;
+		str++;
 	}
-	t = longa - 1;
-	for (o = 0 ; o <= t ; o++)
+
+	for (i = 0; i < count; i++)
+		str --;
+
+	for (i = 0; i < count; i++)
 	{
-		if (o % 2 == 0)
-	{
-		_putchar(str[o]);
+		if (i % 2 == 0)
+			_putchar(str[i]);
 	}
-	}
+
 	_putchar('\n');
 }
