@@ -1,1 +1,1 @@
-static libraries
+create_static_lib.sh
